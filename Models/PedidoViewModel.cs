@@ -40,6 +40,69 @@ namespace tl2_tp5_2022_TRIXServer.Models
         [Required]
         [DisplayName("Telefono: ")]
         public string Telefono { get; set; }
-        
+
+        [Required]
+        [StringLength(40)]
+        [DisplayName("Direccion: ")]
+        public string Direccion { get; set; }
+
+        [Required]
+        [StringLength(40)]
+        [DisplayName("Referncia: ")]
+        public string Referencia { get; set; }
+
+        [Required]
+        [StringLength(40)]
+        [DisplayName("Observaciones: ")]
+        public string Observaciones { get; set; }
+
     }
+
+    public class EditPedidoViewModel
+    {
+        [Required]
+        [NotNull]
+        public int Id_pedido { get; set; }
+
+        [Required]
+        [DisplayName("Nombre: ")]
+        public string Nombre { get; set; }
+
+        [Required]
+        [DisplayName("Telefono: ")]
+        public string Telefono { get; set; }
+
+        [Required]
+        [StringLength(40)]
+        [DisplayName("Direccion: ")]
+        public string Direccion { get; set; }
+
+        [Required]
+        [StringLength(40)]
+        [DisplayName("Referncia: ")]
+        public string Referencia { get; set; }
+
+        [Required]
+        [StringLength(40)]
+        [DisplayName("Observaciones: ")]
+        public string Observaciones { get; set; }
+
+        public EditPedidoViewModel()
+        {
+
+        }
+
+        public EditPedidoViewModel(int dataId_pedido, string dataNombre, string dataTelefono, string dataDireccion, string dataReferencia, string dataObservaciones)
+        {
+            this.Id_pedido = dataId_pedido;
+            this.Nombre = dataNombre;
+            this.Telefono = dataTelefono;
+            this.Direccion = dataDireccion;
+            this.Referencia = dataReferencia;
+            this.Observaciones = dataObservaciones;
+
+        }
+
+    }
+    
 }
