@@ -21,12 +21,12 @@ namespace tl2_tp5_2022_TRIXServer.Models
             
         }
 
-        public Pedido(int id_pedido, string observaciones, int estado, Cliente cliente)
+        public Pedido(int dataId_pedido, string dataObservaciones, int dataEstado, Cliente dataCliente)
         {
-            this.id_pedido = id_pedido;
-            this.observaciones = observaciones;
-            this.estado = (status)estado;
-            this.elCliente = cliente;
+            this.id_pedido = dataId_pedido;
+            this.observaciones = dataObservaciones;
+            this.estado = (status)dataEstado;
+            this.elCliente = dataCliente;
             
         }
 

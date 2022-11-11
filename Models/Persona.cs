@@ -17,12 +17,12 @@ namespace tl2_tp5_2022_TRIXServer.Models
 
         }
 
-        public Persona(int id_persona, string nombre, string telefono, string direccion)
+        public Persona(int dataId_persona, string dataNombre, string dataTelefono, string dataDireccion)
         {
-            this.id_persona = id_persona;
-            this.nombre = nombre;
-            this.telefono = telefono;
-            this.direccion = direccion;
+            this.id_persona = dataId_persona;
+            this.nombre = dataNombre;
+            this.telefono = dataTelefono;
+            this.direccion = dataDireccion;
             
         }
 
