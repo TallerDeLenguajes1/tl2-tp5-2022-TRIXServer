@@ -1,0 +1,74 @@
+@model tl2_tp5_2022_TRIXServer.Models.Pedido
+
+@{
+    ViewData["Title"] = "Edit Pedido";
+}
+
+<hr />
+
+@using (Html.BeginForm("editPedido", "Home"))
+{
+    <table>
+        <tr>
+            <td>
+                Nombre: 
+            </td>
+            <td>
+                <label for="nombre">
+                    <input type="text" name="dataNombre" id="dataNombre" value="@Model.ElCliente.Nombre">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Telefono: 
+            </td>
+            <td>
+                <label for="telefono">
+                    <input type="text" name="dataTelefono" id="dataTelefono" value="@Model.ElCliente.Telefono">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Direccion: 
+            </td>
+            <td>
+                <label for="direccion">
+                    <input type="text" name="dataDireccion" id="dataDireccion" value="@Model.ElCliente.Direccion">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Referencia: 
+            </td>
+            <td>
+                <label for="referencia">
+                    <input type="text" name="dataReferencia" id="dataReferencia" value="@Model.ElCliente.Referencia">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Observaciones: 
+            </td>
+            <td>
+                <label for="observaciones">
+                    <input type="text" name="dataObservaciones" id="dataObservaciones" value="@Model.Observaciones">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan = 2>
+                <input type="hidden" name="dataId" value="@Model.Id_pedido">
+                <input type="submit", value="Edit">
+            </td>
+        </tr>
+    </table>
+
+<hr />
+
+@Html.ActionLink("Cancelar", "Index", "Home")
+
+}

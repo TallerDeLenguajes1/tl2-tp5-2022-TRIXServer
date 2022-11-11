@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "Alta Cadete";
+}
+
+<hr />
+
+@using (Html.BeginForm("altaCadete", "Home"))
+{
+    <table>
+        <tr>
+            <td>
+                Nombre: 
+            </td>
+            <td>
+                <label for="nombre">
+                    <input type="text" name="dataNombre" id="dataNombre">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Telefono: 
+            </td>
+            <td>
+                <label for="telefono">
+                    <input type="text" name="dataTelefono" id="dataTelefono">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Direccion: 
+            </td>
+            <td>
+                <label for="direccion">
+                    <input type="text" name="dataDireccion" id="dataDireccion">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan = 2>
+               <input type="submit", value="Alta">
+            </td>
+        </tr>
+    </table>
+
+<hr />
+
+@Html.ActionLink("Cancelar", "Index", "Home")
+
+}

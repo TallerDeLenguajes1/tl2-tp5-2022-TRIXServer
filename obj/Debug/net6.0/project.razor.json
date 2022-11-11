@@ -16313,6 +16313,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/trix/Library/Mobile Documents/com~apple~CloudDocs/facet/taller 2/tl2-tp5-2022-TRIXServer/Views/Home/editPedido.cshtml",
+      "TargetPath": "Views\\Home\\editPedido.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/trix/Library/Mobile Documents/com~apple~CloudDocs/facet/taller 2/tl2-tp5-2022-TRIXServer/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -16328,8 +16333,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/trix/Library/Mobile Documents/com~apple~CloudDocs/facet/taller 2/tl2-tp5-2022-TRIXServer/Views/Home/altaPedido.cshtml",
+      "TargetPath": "Views\\Home\\altaPedido.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/trix/Library/Mobile Documents/com~apple~CloudDocs/facet/taller 2/tl2-tp5-2022-TRIXServer/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/trix/Library/Mobile Documents/com~apple~CloudDocs/facet/taller 2/tl2-tp5-2022-TRIXServer/Views/Home/altaCadete.cshtml",
+      "TargetPath": "Views\\Home\\altaCadete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/trix/Library/Mobile Documents/com~apple~CloudDocs/facet/taller 2/tl2-tp5-2022-TRIXServer/Views/Home/editCadete.cshtml",
+      "TargetPath": "Views\\Home\\editCadete.cshtml",
       "FileKind": "mvc"
     }
   ],

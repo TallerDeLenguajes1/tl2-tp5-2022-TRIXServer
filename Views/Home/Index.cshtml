@@ -1,8 +1,118 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model tl2_tp5_2022_TRIXServer.Models.DBCadeteria
+
+@{
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>Listado</h1>
+
+<hr />
+
+<h2>Cadetes</h2>
+
+@if (Model.LaCadeteria.Cadetes.Count() < 10)
+{
+    @Html.ActionLink("| Alta Cadete |", "altaCadete")
+
+}
+else
+{
+    <p>Maximo 10 Cadetes</p>
+
+}
+
+<hr />
+
+@{
+    if (Model.LaCadeteria.Cadetes.Count() > 0)
+    {
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Telefono</th>
+                <th>Direccion</th>
+                <th>Pedidos</th>
+                <th></th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model.LaCadeteria.Cadetes)
+            {
+                <tr>
+                    <td>@item.Nombre</td>
+                    <td>@item.Telefono</td>
+                    <td>@item.Direccion</td>
+                    <td>@item.Pedidos.Count()</td>
+                    <td>@Html.ActionLink("| Edit |", "editCadete", new { dataId = item.Id_persona })</td>
+                    <td>@Html.ActionLink("| Baja |", "bajaCadete", new { dataId = item.Id_persona }, new { onclick = $"return confirm('Esta seguro?');" })</td>
+                </tr>
+
+            }
+        </table>
+
+    }
+    else
+    {
+        <table>
+            <tr>Sin Cadetes</tr>
+        </table>
+
+    }
+
+}
+
+<hr />
+
+<h2>Pedidos</h2>
+
+@if (Model.PedidosSinAsignar.Count() < 10) 
+{
+    @Html.ActionLink("| Alta Pedido |", "altaPedido");
+
+}
+else
+{
+    <p>Maximo 10 Pedidos</p>
+}
+
+<hr />
+
+@{
+    if (Model.PedidosSinAsignar.Count() > 0)
+    {
+        <table>
+            <tr>
+                <th>Estado</th>
+                <th>Cliente</th>
+                <th>Telefono</th>
+                <th>Direccion</th>
+                <th>Referencias</th>
+                <th>Observaciones</th>
+                <th></th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model.PedidosSinAsignar)
+            {
+                <tr>
+                    <td>@item.Estado</td>
+                    <td>@item.ElCliente.Nombre</td>
+                    <td>@item.ElCliente.Telefono</td>
+                    <td>@item.ElCliente.Direccion</td>
+                    <td>@item.ElCliente.Referencia</td>
+                    <td>@item.Observaciones</td>
+                    <td>@Html.ActionLink("| Edit |", "editPedido", new { dataId = item.Id_pedido })</td>
+                    <td>@Html.ActionLink("| Baja |", "bajaPedido", new { dataId = item.Id_pedido }, new { onclick = $"return confirm('Esta seguro?');" })</td>
+
+                </tr>
+
+            }
+
+        </table>
+
+    }
+    else
+    {
+        <p>Sin Pedidos</p>
+    }
+
+}

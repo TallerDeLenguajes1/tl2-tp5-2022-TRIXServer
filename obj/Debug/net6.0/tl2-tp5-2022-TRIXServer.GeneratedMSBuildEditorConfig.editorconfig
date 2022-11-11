@@ -15,6 +15,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/trix/Library/Mobile Documents/com~apple~CloudDocs/facet/taller 2/tl2-tp5-2022-TRIXServer
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/trix/Library/Mobile Documents/com~apple~CloudDocs/facet/taller 2/tl2-tp5-2022-TRIXServer/Views/Home/altaCadete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9hbHRhQ2FkZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/trix/Library/Mobile Documents/com~apple~CloudDocs/facet/taller 2/tl2-tp5-2022-TRIXServer/Views/Home/altaPedido.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9hbHRhUGVkaWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/trix/Library/Mobile Documents/com~apple~CloudDocs/facet/taller 2/tl2-tp5-2022-TRIXServer/Views/Home/editCadete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9lZGl0Q2FkZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/trix/Library/Mobile Documents/com~apple~CloudDocs/facet/taller 2/tl2-tp5-2022-TRIXServer/Views/Home/editPedido.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9lZGl0UGVkaWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/trix/Library/Mobile Documents/com~apple~CloudDocs/facet/taller 2/tl2-tp5-2022-TRIXServer/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

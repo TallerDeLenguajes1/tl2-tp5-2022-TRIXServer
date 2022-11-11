@@ -1,0 +1,71 @@
+@{
+    ViewData["Title"] = "Alta Pedido";
+}
+
+<hr />
+
+@using (Html.BeginForm("altaPedido", "Home"))
+{
+    <table>
+        <tr>
+            <td>
+                Nombre: 
+            </td>
+            <td>
+                <label for="nombre">
+                    <input type="text" name="dataNombre" id="dataNombre">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Telefono: 
+            </td>
+            <td>
+                <label for="telefono">
+                    <input type="text" name="dataTelefono" id="dataTelefono">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Direccion: 
+            </td>
+            <td>
+                <label for="direccion">
+                    <input type="text" name="dataDireccion" id="dataDireccion">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Referencia: 
+            </td>
+            <td>
+                <label for="referencia">
+                    <input type="text" name="dataReferencia" id="dataReferencia">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Observaciones: 
+            </td>
+            <td>
+                <label for="observaciones">
+                    <input type="text" name="dataObservaciones" id="dataObservaciones">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan = 2>
+               <input type="submit", value="Alta">
+            </td>
+        </tr>
+    </table>
+
+<hr />
+
+@Html.ActionLink("Cancelar", "Index", "Home")
+
+}
