@@ -10,7 +10,7 @@ namespace tl2_tp5_2022_TRIXServer.Models
 {
     public class CadeteViewModel : Persona
     {
-        public List<Pedido> pedidos { get; set; }
+        public List<Pedido> Pedidos { get; set; }
 
         public CadeteViewModel() : base()
         {
@@ -23,7 +23,7 @@ namespace tl2_tp5_2022_TRIXServer.Models
             this.Nombre = dataNombre;
             this.Telefono = dataTelefono;
             this.Direccion = dataDireccion;
-            this.pedidos = new List<Pedido>();
+            this.Pedidos = new List<Pedido>();
             
         }
         
@@ -80,5 +80,5 @@ namespace tl2_tp5_2022_TRIXServer.Models
         }
 
     }
-    
+
 }
