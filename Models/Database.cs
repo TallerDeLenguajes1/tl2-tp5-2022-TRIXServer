@@ -7,10 +7,10 @@ namespace tl2_tp5_2022_TRIXServer.Models
 {
     public class Database
     {
-        static public int id_cadete = InitId();
-        static public int id_pedido = InitId();
-        static public List<Cadete> cadetes = InitCadete();
-        static public List<Pedido> pedidos = InitPedido();
+        static public int Id_cadete = InitId();
+        static public int Id_pedido = InitId();
+        static public List<CadeteViewModel> Cadetes = InitCadete();
+        static public List<PedidoViewModel> Pedidos = InitPedido();
 
         public Database()
         {
@@ -23,16 +23,16 @@ namespace tl2_tp5_2022_TRIXServer.Models
 
         }
 
-        static private List<Cadete> InitCadete()
+        static private List<CadeteViewModel> InitCadete()
         {
-            List<Cadete> cadete = new();
+            List<CadeteViewModel> cadete = new();
             return cadete;
 
         }
 
-        static private List<Pedido> InitPedido()
+        static private List<PedidoViewModel> InitPedido()
         {
-            List<Pedido> pedido = new();
+            List<PedidoViewModel> pedido = new();
             return pedido;
             
         }

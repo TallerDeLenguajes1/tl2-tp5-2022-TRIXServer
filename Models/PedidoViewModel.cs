@@ -100,9 +100,7 @@ namespace tl2_tp5_2022_TRIXServer.Models
             this.Direccion = dataDireccion;
             this.Referencia = dataReferencia;
             this.Observaciones = dataObservaciones;
-
         }
 
     }
-    
 }
